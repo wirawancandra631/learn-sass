@@ -1,0 +1,30 @@
+@use 'color';
+@use 'mixins';
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.content{
+  @include mixins.grid-template;
+}
+nav,section,footer{
+  padding: 20px;
+  border: 1px solid  black;
+}
+.navbar{
+  background-color: color.$sucess;
+  grid-area: navbar;
+}
+.one{
+  grid-area: one;
+  background-color: color.$primary;
+}
+.two{
+  grid-area: two;
+  background-color: color.$primary;
+}
+.footer{
+  grid-area: footer;
+  background-color: color.$slate;
+}

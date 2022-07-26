@@ -1,0 +1,14 @@
+@mixin grid-template{
+    width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas: 
+  "navbar navbar"
+  "one two"
+  "one two"
+  "footer footer"
+  ;
+  gap: 10px ;
+  padding: 10px;
+  align-content: center;
+}
